@@ -4,14 +4,14 @@ import java.util.*
 
 class SpecialOrder(date: Date, number: String ) : Order(date,number) {
     override fun confirm() {
-        // do special confirm
+        println("Pesanan Spesial dengan jumlah $number pada tanggal $date dikonfirmasi")
     }
 
     override fun close() {
-        // do special close
+        println("Pesanan Spesial dengan jumlah $number pada tanggal $date telah selesai")
     }
 
     fun dispatch(){
-        // do special dispatch
+        println("Pesanan Spesial dengan jumlah $number pada tanggal $date telah di tugaskan")
     }
 }
