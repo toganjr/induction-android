@@ -19,3 +19,4 @@ class Car(paramBrand: String, paramName: String, paramYear: Int = 2020){
     var year: Int = paramYear
 
 }
+
