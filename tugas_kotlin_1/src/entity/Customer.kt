@@ -5,6 +5,20 @@ import data.SpecialOrder
 
 class Customer(val name: String, val location: String) {
 
+    fun doOrder(order: Order, methodOrder: (Order) -> Unit) {
+        println("==============================================================================================================================")
+        this.sendOrder(order)
+        methodOrder(order)
+        this.receiveOrder(order)
+        println("==============================================================================================================================")
+    }
+
+    fun runCommand(customer: Customer, order: Order, type: (Customer, Order) -> Unit): Unit {
+        println("==============================================================================================================================")
+        type(customer,order)
+        println("==============================================================================================================================")
+    }
+
     fun sendOrder(order: Order): Unit{
         val name = this.name.uppercase()
         val location = this.location.uppercase()
