@@ -6,43 +6,26 @@ import java.lang.System.currentTimeMillis
 import java.time.LocalDate
 import java.util.*
 
-fun checkScopeRunCommand(){
-    // runCommand() // ERROR KARENA BUKAN DALAM SCOPE
-}
-
 fun main() {
 
-    checkScopeRunCommand()
-
-    val togan = Customer("togan", "Ngawi")
     val specialOrder = SpecialOrder(Date(currentTimeMillis()),"10")
     val normalOrder = NormalOrder(Date(currentTimeMillis()),"5")
 
-    // runCommand() //ERROR KARENA DIPANGGIL DIATAS FUNCTIONYA SENDIRI
-    fun runCommand(customer: Customer, order: Order, type: (Customer, Order) -> Unit): Unit {
-        println("==============================================================================================================================")
-        type(customer,order)
-        println("==============================================================================================================================")
-    }
-
-    val type: (Customer, Order) -> Unit = {
-            customer: Customer, order: Order ->
-        if (order is SpecialOrder) {
-            customer.sendOrder(order)
-            order.confirm()
-            order.dispatch()
-            customer.receiveOrder(order)
-            order.close()
-        } else if (order is NormalOrder){
-            customer.sendOrder(order)
-            order.confirm()
-            order.dispatch()
-            order.receive()
-            customer.receiveOrder(order)
-            order.close()
+    val doSomething: (Order) -> Unit = {
+        if (it is SpecialOrder) {
+            it.confirm()
+            it.dispatch()
+            it.close()
+        } else if (it is NormalOrder){
+            it.confirm()
+            it.dispatch()
+            it.receive()
+            it.close()
         }
     }
 
-    runCommand(togan,normalOrder,type)
+    val togan = Customer("Raya", "Ngawi").let {
+        it.doOrder(specialOrder,doSomething)
+    }
 
 }
