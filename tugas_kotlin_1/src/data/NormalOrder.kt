@@ -5,19 +5,20 @@ import java.util.*
 class NormalOrder(date: Date, number: String) : Order(date, number) {
 
     override fun confirm() {
-        println("Pesanan dengan jumlah $number pada tanggal $date dikonfirmasi")
+        date.print()
+        number.print()
     }
 
     override fun close() {
-        println("Pesanan dengan jumlah $number pada tanggal $date telah selesai")
+        println("Pengiriman pesanan telah selesai")
     }
 
     fun dispatch() {
-        println("Pesanan dengan jumlah $number pada tanggal $date telah di tugaskan")
+        println("Pengiriman pesanan telah di tugaskan")
     }
 
     fun receive() {
-        println("Pesanan dengan jumlah $number pada tanggal $date diterima")
+        println("Pesanan telah diterima oleh pelanggan")
     }
 
 }
