@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d86ff37e-f9c1-4f96-8731-2a7bec3fb0e2" name="Changes" comment="" />
+    <list default="true" id="d86ff37e-f9c1-4f96-8731-2a7bec3fb0e2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/belajar_kotlin_dasar/out/production/belajar_kotlin_dasar/META-INF/belajar_kotlin_dasar.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/belajar_kotlin_dasar/out/production/belajar_kotlin_dasar/META-INF/belajar_kotlin_dasar.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tugas_kotlin_1/out/production/tugas_kotlin_1/META-INF/tugas_kotlin_1.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/tugas_kotlin_1/out/production/tugas_kotlin_1/META-INF/tugas_kotlin_1.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tugas_kotlin_1/out/production/tugas_kotlin_1/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/tugas_kotlin_1/out/production/tugas_kotlin_1/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tugas_kotlin_1/out/production/tugas_kotlin_1/data/SpecialOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/tugas_kotlin_1/out/production/tugas_kotlin_1/data/SpecialOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tugas_kotlin_1/src/data/SpecialOrder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/tugas_kotlin_1/src/data/SpecialOrder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tugas_kotlin_1/src/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/tugas_kotlin_1/src/main.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +25,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/belajar_kotlin_oop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/belajar_kotlin_dasar" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
